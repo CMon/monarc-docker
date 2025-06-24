@@ -16,7 +16,7 @@ services:
       - monarc_data:/var/lib/monarc/fo-data
 
   db:
-    image: mariadb:12.0.1-rc
+    image: mariadb:10.5
     environment:
       - MYSQL_ROOT_PASSWORD=tops3cret§
       - MYSQL_DATABASE=monarc_cli
