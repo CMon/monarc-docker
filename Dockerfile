@@ -12,7 +12,7 @@ ENV APPLICATION_ENV=production
 ENV PATH_TO_MONARC=/var/lib/monarc/fo
 ENV MONARCFO_RELEASE_URL=https://github.com/monarc-project/MonarcAppFO/releases/download/$MONARC_VERSION/MonarcAppFO-$MONARC_VERSION.tar.gz
 
-RUN apt-get update && apt-get install -y zip unzip git gettext curl gsfonts software-properties-common git mariadb-client vim imagemagick libzip4
+RUN apt-get update && apt-get install -y zip unzip git gettext curl gsfonts git mariadb-client vim imagemagick libzip5
 # dev dependencies for build
 RUN apt-get install -y --no-install-recommends libzip-dev libonig-dev libcurl4-openssl-dev libicu-dev libpng-dev libxml2-dev libmagickwand-dev
 
